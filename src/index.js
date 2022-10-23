@@ -14,7 +14,7 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="Favs" element={<Favs />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
     </BrowserRouter>
