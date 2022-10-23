@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 20px;
+  font-size: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Home */
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.leilani {
+  width: 100%;
+  height: 400px;
+  background-image: url("/src/pages/images/winterleilani.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.textarea {
+  color: #808080;
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/* Favs */
+.favsBody {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerHeader {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 40px;
+}
+
+.linksBody {
+  /* background-color: grey; */
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  /* width: 90%; */
+}
+
+.linksBody > a {
+  /* background-color: red; */
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  margin: 20px;
+}
+
+/* Footer */
+.footerBody {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: orange;
+}

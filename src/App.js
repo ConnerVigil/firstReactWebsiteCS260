@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  const [input, setInput] = useState("");
+  const [data, setData] = useState([]);
+
+  const changeData = (e) => {
+    setInput(e.target.value);
+  };
+
+  const addItem = () => {
+    setData([...data, input]);
+    setInput("");
+  };
+
+  const handleFilter = () => {};
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Todo List </h1>
+      <input type="text" value={input} onChange={(e) => changeData(e)} />
+      <button onClick={addItem}>Submit</button>
+      {data.map((data) => (
+        <li>{data}</li>
+      ))}
+      <button onClick={handleFilter}>Clear Completed</button>
     </div>
   );
 }
