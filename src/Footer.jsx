@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="footerBody">
       <a
         target="_blank"
-        href="https://meetflo.zendesk.com/hc/en-us/articles/230425728-Privacy-Policies"
+        href="https://github.com/ConnerVigil/firstReactWebsiteCS260"
       >
         Check out the repository on github
       </a>
